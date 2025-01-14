@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<!-- Code Typed By Muhammad Noraeii ==> For More Info. Visit My Github Github.com/Muhammad-Noraeii -->
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ابزار تبدیل ارز | تبدیل آنلاین نرخ ارزها</title>
+    
+        <!-- Meta Description -->
+        <meta name="description" content="ابزار آنلاین تبدیل نرخ ارز. نرخ لحظه‌ای ارزها و تبدیل آسان دلار، یورو، ریال، پوند و سایر ارزهای معتبر.">
+    
+        <!-- Meta Keywords -->
+        <meta name="keywords" content="تبدیل ارز, نرخ ارز, تبدیل آنلاین, دلار به ریال, یورو به دلار, نرخ لحظه‌ای ارزها">
+    
+        <!-- Meta Author -->
+        <meta name="author" content="ابزارچه">
+    
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="ابزار تبدیل ارز | تبدیل آنلاین نرخ ارزها">
+        <meta property="og:description" content="تبدیل نرخ ارز به صورت لحظه‌ای. ابزار تبدیل دلار، یورو، ریال و سایر ارزهای جهانی.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:image" content="https://yourwebsite.com/images/currency-converter.jpg">
+    
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ابزار تبدیل ارز | تبدیل آنلاین نرخ ارزها">
+        <meta name="twitter:description" content="تبدیل آنلاین نرخ ارزها به همراه نرخ لحظه‌ای دلار، یورو، ریال و دیگر ارزهای معتبر.">
+        <meta name="twitter:image" content="https://yourwebsite.com/images/currency-converter.jpg">
+    
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://yourwebsite.com">
+    </head>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابزارچه | تبدیل ارز ها</title>
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Regular-FD.woff2') format('woff2');
+        }
+        body {
+    font-family: 'Vazir', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff007a);
+    background-size: 600% 600%;
+    animation: rainbowAnimation 15s ease infinite;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 350px; /* عرض کمتر */
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 1.5em; /* کوچکتر شدن فونت عنوان */
+    margin-bottom: 15px;
+    color: #007bff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0, 123, 255, 0.3);
+}
+
+label {
+    font-size: 0.9em; /* کاهش اندازه متن برچسب‌ها */
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+    font-weight: bold;
+}
+
+input, select, button {
+    font-family: 'Vazir', Arial, sans-serif;
+    width: 100%;
+    padding: 10px; /* کاهش ارتفاع جعبه‌ها */
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9em; /* کاهش اندازه فونت ورودی‌ها */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+#result {
+    font-size: 1em; /* کاهش اندازه نتیجه */
+    margin-top: 15px;
+    color: #28a745;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ads-section {
+    margin-top: 20px;
+    padding: 15px; /* کاهش اندازه padding تبلیغات */
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9em; /* کاهش اندازه فونت تبلیغات */
+    color: #007bff;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.2);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ابزار تبدیل ارز</h1>
+        <label for="amount">مقدار را وارد کنید:</label>
+        <input type="number" id="amount" placeholder="مثلاً 100">
+        
+        <label for="from">ارز مبدأ:</label>
+        <select id="from"></select>
+        
+        <label for="to">ارز مقصد:</label>
+        <select id="to"></select>
+        
+        <button onclick="convertCurrency()">تبدیل</button>
+        <p id="result"></p>
+
+        <!-- تبلیغات -->
+        <div class="ads-section">
+            <p>🔥 تبلیغات شما می‌تواند اینجا باشد! برای اطلاعات بیشتر با ما تماس بگیرید. 🔥</p>
+        </div>
+    </div>
+
+    <script>
+ const currencyList = {
+    USD: { name: "دلار آمریکا", symbol: "$" },
+    EUR: { name: "یورو", symbol: "€" },
+    GBP: { name: "پوند بریتانیا", symbol: "£" },
+    JPY: { name: "ین ژاپن", symbol: "¥" },
+    CHF: { name: "فرانک سوئیس", symbol: "CHF" },
+    AUD: { name: "دلار استرالیا", symbol: "A$" },
+    CAD: { name: "دلار کانادا", symbol: "C$" },
+    NZD: { name: "دلار نیوزیلند", symbol: "NZ$" },
+    CNY: { name: "یوان چین", symbol: "¥" },
+    HKD: { name: "دلار هنگ‌کنگ", symbol: "HK$" },
+    SGD: { name: "دلار سنگاپور", symbol: "S$" },
+    INR: { name: "روپیه هند", symbol: "₹" },
+    RUB: { name: "روبل روسیه", symbol: "₽" },
+    BRL: { name: "رئال برزیل", symbol: "R$" },
+    ZAR: { name: "رند آفریقای جنوبی", symbol: "R" },
+    KRW: { name: "وون کره جنوبی", symbol: "₩" },
+    TRY: { name: "لیر ترکیه", symbol: "₺" },
+    MXN: { name: "پزو مکزیک", symbol: "Mex$" },
+    AED: { name: "درهم امارات", symbol: "د.إ" },
+    ARS: { name: "پزو آرژانتین", symbol: "$" },
+    BDT: { name: "تاکا بنگلادش", symbol: "৳" },
+    BHD: { name: "دینار بحرین", symbol: ".د.ب" },
+    CLP: { name: "پزو شیلی", symbol: "CLP$" },
+    COP: { name: "پزو کلمبیا", symbol: "COL$" },
+    CZK: { name: "کرون جمهوری چک", symbol: "Kč" },
+    DKK: { name: "کرون دانمارک", symbol: "kr" },
+    EGP: { name: "پوند مصر", symbol: "ج.م" },
+    HUF: { name: "فورینت مجارستان", symbol: "Ft" },
+    IDR: { name: "روپیه اندونزی", symbol: "Rp" },
+    ILS: { name: "شِکِل اسرائیل", symbol: "₪" },
+    KWD: { name: "دینار کویت", symbol: "د.ك" },
+    MYR: { name: "رینگیت مالزی", symbol: "RM" },
+    NOK: { name: "کرون نروژ", symbol: "kr" },
+    PHP: { name: "پزو فیلیپین", symbol: "₱" },
+    PKR: { name: "روپیه پاکستان", symbol: "₨" },
+    PLN: { name: "زلوتی لهستان", symbol: "zł" },
+    SAR: { name: "ریال عربستان سعودی", symbol: "ر.س" },
+    SEK: { name: "کرون سوئد", symbol: "kr" },
+    THB: { name: "بات تایلند", symbol: "฿" },
+    TWD: { name: "دلار تایوان", symbol: "NT$" },
+    UAH: { name: "گریونا اوکراین", symbol: "₴" },
+    VND: { name: "دانگ ویتنام", symbol: "₫" },
+    IRR: { name: "ریال ایران", symbol: "ریال" },
+    IQD: { name: "دینار عراق", symbol: "د.ع" },
+    LBP: { name: "لیره لبنان", symbol: "ل.ل" },
+    JOD: { name: "دینار اردن", symbol: "د.ا" },
+    OMR: { name: "ریال عمان", symbol: "ر.ع" },
+    KZT: { name: "تنگه قزاقستان", symbol: "₸" },
+    QAR: { name: "ریال قطر", symbol: "ر.ق" },
+    NGN: { name: "نایرا نیجریه", symbol: "₦" },
+    EEK: { name: "کرون استونی", symbol: "kr" }
+};
+
+
+        async function loadCurrencies() {
+            const fromSelect = document.getElementById('from');
+            const toSelect = document.getElementById('to');
+
+            Object.keys(currencyList).forEach(currency => {
+                const optionFrom = document.createElement('option');
+                const optionTo = document.createElement('option');
+
+                optionFrom.value = currency;
+                optionFrom.textContent = `${currency} (${currencyList[currency].name})`;
+                fromSelect.appendChild(optionFrom);
+
+                optionTo.value = currency;
+                optionTo.textContent = `${currency} (${currencyList[currency].name})`;
+                toSelect.appendChild(optionTo);
+            });
+        }
+
+        async function convertCurrency() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            const from = document.getElementById('from').value;
+            const to = document.getElementById('to').value;
+
+            if (!amount || amount <= 0) {
+                document.getElementById('result').textContent = "لطفاً مقدار معتبر وارد کنید.";
+                return;
+            }
+
+            try {
+                const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
+                const data = await response.json();
+
+                const rate = data.rates[to];
+                const result = (amount * rate).toFixed(2);
+                document.getElementById('result').textContent = `نتیجه: ${result} ${currencyList[to].symbol}`;
+            } catch (error) {
+                document.getElementById('result').textContent = "خطا در دریافت اطلاعات نرخ ارز.";
+            }
+        }
+
+        loadCurrencies();
+    </script>
+</body>
+</html>
+<!-- Code Typed By Muhammad Noraeii ==> For More Info. Visit My Github Github.com/Muhammad-Noraeii -->
