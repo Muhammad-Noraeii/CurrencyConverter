@@ -85,7 +85,7 @@ Follow these steps to set up the project:
    ```
 2. Navigate to the **Src** directory:
    ```bash
-   cd currency-converter-tool/Src
+   cd Simple-Currency-Converter/Src
    ```
 3. Open the desired file in your browser:
    - For the **Persian interface**, open `index-FA.html`.
