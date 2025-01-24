@@ -81,15 +81,14 @@ Follow these steps to set up the project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Muhammad.Noraeii/Simple-Currency-Converter.git
+   git clone https://github.com/Muhammad.Noraeii/CurrencyConverter.git
    ```
 2. Navigate to the **Src** directory:
    ```bash
    cd Simple-Currency-Converter/Src
    ```
 3. Open the desired file in your browser:
-   - For the **Persian interface**, open `index-FA.html`.
-   - For the **English interface**, open `index-EN.html`.
+   - Please open "index.h
 
 That’s it! You can now start using the tool to convert currencies.
 
@@ -100,8 +99,8 @@ That’s it! You can now start using the tool to convert currencies.
 ```
 currency-converter-tool/
 ├── Src/
-│   ├── index-FA.html        # Persian version of the tool
-│   └──  index-EN.html        # English version of the tool             
+│   ├── index-FA.html        # index  of the tool
+│   └──  currency-converter.js # Script of tool            
 ├── README.md                # Documentation file
 └── LICENSE                  # License information
 ```
