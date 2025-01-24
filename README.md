@@ -1,8 +1,4 @@
 
-
----
-
-
 # Currency Converter Tool
 
 This project is a simple and powerful online **Currency Converter Tool** that supports real-time exchange rates. It provides an interface in both **Persian** and **English**, allowing users to easily convert between over 50 global currencies.
@@ -158,4 +154,3 @@ If you have any questions, feedback, or suggestions, feel free to contact us:
 ## ⭐ Acknowledgements
 
 Special thanks to [ExchangeRate-API](https://www.exchangerate-api.com/) for providing real-time currency exchange data.
-```
