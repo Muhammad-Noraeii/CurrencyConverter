@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter Tool | Online Currency Exchange Rates</title>
+    
+        <!-- Meta Description -->
+        <meta name="description" content="Online currency converter tool. Real-time exchange rates and easy conversion for USD, EUR, Rial, GBP, and other major currencies.">
+    
+        <!-- Meta Keywords -->
+        <meta name="keywords" content="currency converter, exchange rates, online converter, USD to Rial, Euro to Dollar, real-time exchange rates">
+    
+        <!-- Meta Author -->
+        <meta name="author" content="Toolch">
+    
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Currency Converter Tool | Online Currency Exchange Rates">
+        <meta property="og:description" content="Real-time currency conversion tool. Convert USD, EUR, Rial, and other global currencies easily.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:image" content="https://yourwebsite.com/images/currency-converter.jpg">
+    
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Currency Converter Tool | Online Currency Exchange Rates">
+        <meta name="twitter:description" content="Convert currency online with real-time exchange rates for USD, EUR, Rial, and other major currencies.">
+        <meta name="twitter:image" content="https://yourwebsite.com/images/currency-converter.jpg">
+    
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://yourwebsite.com">
+        
+        <style>
+            @font-face {
+                font-family: 'Vazir';
+                src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Regular-FD.woff2') format('woff2');
+            }
+            body {
+                font-family: 'Vazir', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                direction: ltr;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff007a);
+                background-size: 400% 400%;
+                animation: rainbowAnimation 10s infinite linear;
+            }
+
+            @keyframes rainbowAnimation {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .container {
+                background: rgba(255, 255, 255, 0.85);
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                padding: 20px 30px;
+                width: 350px;
+                position: relative;
+                backdrop-filter: blur(10px);
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+                color: #007bff;
+                text-align: center;
+                font-weight: bold;
+                text-shadow: 0 1px 3px rgba(0, 123, 255, 0.3);
+            }
+
+            label {
+                font-size: 0.9em;
+                margin-bottom: 5px;
+                display: block;
+                color: #555;
+                font-weight: bold;
+            }
+
+            input, select, button {
+                font-family: 'Vazir', Arial, sans-serif;
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 0.9em;
+                transition: box-shadow 0.3s ease, transform 0.2s ease;
+            }
+
+            button {
+                background: linear-gradient(45deg, #007bff, #0056b3);
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+                font-size: 1.1em;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-radius: 8px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            button:hover {
+                background: linear-gradient(45deg, #0056b3, #003d80);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                transform: translateY(-2px);
+            }
+
+            button:active {
+                transform: translateY(1px);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            button::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 300%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                transform: skewX(-45deg);
+                transition: left 0.5s ease;
+                pointer-events: none;
+            }
+
+            button:hover::before {
+                left: 100%;
+            }
+
+            #result {
+                font-size: 1em;
+                margin-top: 15px;
+                color: #28a745;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .ads-section {
+                margin-top: 20px;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.9);
+                border: 2px dashed #007bff;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 0.9em;
+                color: #007bff;
+                box-shadow: 0 5px 10px rgba(0, 123, 255, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Currency Converter Tool</h1>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="e.g., 100">
+            
+            <label for="from">Base Currency:</label>
+            <select id="from"></select>
+            
+            <label for="to">Target Currency:</label>
+            <select id="to"></select>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="result"></p>
+        
+            <!-- Advertisements -->
+            <div class="ads-section">
+                <p>🔥 Your ad could be here! Contact us for more information. 🔥</p>    
+            </div>
+        </div>
+    
+        <script src="currency-converter.js"></script>
+    </body>
+</html>
