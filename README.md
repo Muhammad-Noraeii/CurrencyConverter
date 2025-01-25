@@ -94,7 +94,7 @@ That’s it! You can now start using the tool to convert currencies.
 ```
 currency-converter-tool/
 ├── Src/
-│   ├── index-FA.html        # index  of the tool
+│   ├── index.html        # index  of the tool
 │   └──  currency-converter.js # Script of tool            
 ├── README.md                # Documentation file
 └── LICENSE                  # License information
