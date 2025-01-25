@@ -1,7 +1,7 @@
 
 # Currency Converter Tool
 
-This project is a simple and powerful online **Currency Converter Tool** that supports real-time exchange rates. It provides an interface in both **Persian** and **English**, allowing users to easily convert between over 50 global currencies.
+This project is a simple and powerful online **Currency Converter Tool** that supports real-time exchange rates. It provides an interface in **English**, allowing users to easily convert between over 50 global currencies.
 
 ---
 
@@ -65,7 +65,6 @@ This project is a simple and powerful online **Currency Converter Tool** that su
 ## 🛠 Features
 
 - Real-time exchange rates with accurate data.
-- Bilingual interface: Supports both Persian and English.
 - Supports conversion for 50+ global currencies.
 - Mobile-friendly and responsive design.
 
@@ -84,7 +83,7 @@ Follow these steps to set up the project:
    cd Simple-Currency-Converter/Src
    ```
 3. Open the desired file in your browser:
-   - Please open "index.h
+   - Please open "index.html
 
 That’s it! You can now start using the tool to convert currencies.
 
