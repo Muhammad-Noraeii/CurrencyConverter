@@ -94,19 +94,17 @@ That’s it! You can now start using the tool to convert currencies.
 ```
 currency-converter-tool/
 ├── Src/
-│   ├── index.html        # index  of the tool
-│   └──  currency-converter.js # Script of tool            
-├── README.md                # Documentation file
-└── LICENSE                  # License information
+│   ├── index.html               # index  of the tool
+│   └──  currency-converter.js   # Script of tool            
+├── README.md                    # Documentation file
+└── LICENSE                      # License information
 ```
 
 ---
 
 ## 🌟 How to Use
 
-1. Open the appropriate HTML file for your preferred language:
-   - **Persian**: `index-FA.html`
-   - **English**: `index-EN.html`
+1. Open `index.html` 
 2. Enter the amount you want to convert.
 3. Select the **source currency** (`From`).
 4. Select the **target currency** (`To`).
