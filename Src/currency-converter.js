@@ -57,39 +57,58 @@ async function loadCurrencies() {
     const toSelect = document.getElementById('to');
 
     Object.keys(currencyList).forEach(currency => {
-        const optionFrom = document.createElement('option');
-        const optionTo = document.createElement('option');
+        const optionFrom = createCurrencyOption(currency);
+        const optionTo = createCurrencyOption(currency);
 
-        optionFrom.value = currency;
-        optionFrom.textContent = `${currency} (${currencyList[currency].name})`;
         fromSelect.appendChild(optionFrom);
-
-        optionTo.value = currency;
-        optionTo.textContent = `${currency} (${currencyList[currency].name})`;
         toSelect.appendChild(optionTo);
     });
+}
+
+function createCurrencyOption(currency) {
+    const option = document.createElement('option');
+    option.value = currency;
+    option.textContent = `${currency} (${currencyList[currency].name})`;
+    return option;
 }
 
 async function convertCurrency() {
     const amount = parseFloat(document.getElementById('amount').value);
     const from = document.getElementById('from').value;
     const to = document.getElementById('to').value;
+    const resultElement = document.getElementById('result');
 
     if (!amount || amount <= 0) {
-        document.getElementById('result').textContent = "Please enter a valid amount.";
+        resultElement.textContent = "Please enter a valid amount.";
         return;
     }
 
-    try {
-        const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
-        const data = await response.json();
+    resultElement.textContent = "Loading...";
 
-        const rate = data.rates[to];
+    try {
+        const rate = await fetchExchangeRate(from, to);
         const result = (amount * rate).toFixed(2);
-        document.getElementById('result').textContent = `Result: ${result} ${currencyList[to].symbol}`;
+        resultElement.textContent = `Result: ${result} ${currencyList[to].symbol}`;
     } catch (error) {
-        document.getElementById('result').textContent = "Error retrieving exchange rate information.";
+        console.error('Error retrieving exchange rate information:', error);
+        resultElement.textContent = "Error retrieving exchange rate information.";
     }
 }
 
-loadCurrencies();
+async function fetchExchangeRate(from, to) {
+    const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    const rate = data.rates[to];
+    if (!rate) {
+        throw new Error('Rate not found for selected currency');
+    }
+    return rate;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadCurrencies();
+    document.getElementById('convertButton').addEventListener('click', convertCurrency);
+});
